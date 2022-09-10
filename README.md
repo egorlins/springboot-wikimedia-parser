@@ -51,6 +51,11 @@ Jackson Databind
 
 https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
 
+Database
+
+create database wikimedia;
+
+
 # run/test
 mvn clean install
 
