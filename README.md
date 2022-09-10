@@ -29,3 +29,10 @@ Wikimedia stream
 https://stream.wikimedia.org/v2/stream/recentchange
 
 # run/test
+mvn clean install
+
+and see:
+[INFO] springboot-wikimedia-parser ........................ SUCCESS [  6.517 s]
+[INFO] kafka-producer-wikimedia ........................... SUCCESS [  6.805 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
