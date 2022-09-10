@@ -28,11 +28,22 @@ https://docs.spring.io/spring-kafka/reference/html/#quick-tour
 Wikimedia stream
 https://stream.wikimedia.org/v2/stream/recentchange
 
+OkHttp EventSource
+https://mvnrepository.com/artifact/com.launchdarkly/okhttp-eventsource
+this also be needed Https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp
+
+Jackson Core
+https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
+
+Jackson Databind
+https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+
 # run/test
 mvn clean install
 
 and see:
 [INFO] springboot-wikimedia-parser ........................ SUCCESS [  6.517 s]
 [INFO] kafka-producer-wikimedia ........................... SUCCESS [  6.805 s]
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
+
+can be seen from commandline
+.\bin\windows\kafka-console-consumer.bat --topic wikimedia-recent_change --from-beginning --bootstrap-server localhost:9092
